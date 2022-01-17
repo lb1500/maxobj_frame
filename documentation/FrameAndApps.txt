@@ -1,0 +1,4 @@
+The frame and the apps are different projects with separate vue3 projects
+and different databases.
+Interfaces are in the frame project. There must be good reasons to move them
+to custom of the deploy projects.

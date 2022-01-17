@@ -1,0 +1,35 @@
+Definition: “Atoms” are smallest data units, which are not further described by other objects.
+An atom is not allowed as an actor.
+
+Rule: Validation is only done on atoms, not on other objects.
+
+Rule: Any „Group“ (with strName and Group member array) cannot be an atom (it also is not covered by the given description). 
+A Group is a NounObject. Especially, because a Group has typically also the role of an actor.
+
+Therefore, atoms are described (also for system documentation purposes) by the following properties:
+•	strName (= column name, in the table, where the atom is used)
+•	txtDescription
+•	strType = [string, int, double, date, datetime, text, color, ….]
+•	blnNullable
+•	strUnit =  [kg, m, s, A, …]  //SI unit
+•	intSize
+•	DefaultValue
+•	Min
+•	Max
+•	arrStrValFun //array of String validation functions
+•	???
+
+Rule: Any object is first of all an atom. Only when there is a good reason from the actual use case, 
+it may become one of the more complex object types. This holds especially for PropertyObjects.
+This rule is important to keep the system slim. Even so the system is automatically created it should be kept as slim as possible, 
+respectively the system should be only as complex as necessary.
+
+FE component objects are practically only a collection of atoms. 
+/*
+LvB: Don’t think atoms are even necessary in the CompObjects. 
+We can just treat them with withever datatypes is necessary fot the user interface. 
+
+Aky: I think it is the other way round: What else is the content of an CompObject, if not atoms?
+Whatever You show in a FE component, is a simple value from some column in some table and that is an atom.
+*/
+

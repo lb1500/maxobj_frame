@@ -1,0 +1,11 @@
+The following object types are necessary:
+•	NounObjects   
+    //lvb: I think the best way of handling would be to put them in cluster objects just like the proposed actorObject. The stamtement objects will then refer to this clusters. 
+•	(ObjectObjects = NounObjects)
+•	VerbObjects => StatementObject (creating a relation between NounObjects and ObjectObjects) 
+•	Adjective/AdverbObjects = PropertyObjects
+•	“Atoms” 
+
+Distinguishing between NounObjects and ObjectObjects is not necessary. Their roles are in practice interchangeable. 
+A verb object by itself is not necessary, since the role of the verb is to connect subject and object. Therefore we define the sentence object instead of a verb object.
+
